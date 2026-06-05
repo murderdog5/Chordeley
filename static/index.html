@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chordeley</title>
+  </head>
+  <body>
+    <div id="home">
+        <div id ="contentsbar">
+        </div>
+        <div id = "sidebar">
+            <button id="add">+ 新しく進行を追加</button>
+        </div>
+        <div id = "main">
+            <div id = "home-main-head">
+                <h1>Chordeley</h1>
+                <table id = "home-main-table">
+                    <thead>
+                        <tr class = "table-header">
+                            <th class = "table-header">Title</th>
+                            <th class = "table-header">Preview</th>
+                            <th class = "table-header">key</th>
+                            <th class = "table-header">saved date</th>
+                        </tr >
+                    </thead>
+                    <tbody id = "saved-list">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id ="edit-page" style="display:none;">
+        <div class = "container">
+            <div class = "panel">
+                <h2>進行にコードを追加</h2>
+                <div class="btn-grid">
+                    <button class = "chord-btn">C</button>
+                    <button class = "chord-btn">G</button>
+                    <button class = "chord-btn">D</button>
+                    <button class = "chord-btn">A</button>
+                    <button class = "chord-btn">E</button>
+                    <button class = "chord-btn">B</button>
+                    <button class = "chord-btn">F#</button>
+                    <button class = "chord-btn">Db</button>
+                    <button class = "chord-btn">Ab</button>
+                    <button class = "chord-btn">Eb</button>
+                    <button class = "chord-btn">Bb</button>
+                    <button class = "chord-btn">F</button>
+            </div>
+            <h2>コードの種類を選択</h2>
+            <div class="btn-grid">
+                <button class = "quality-btn">maj</button>
+                <button class = "quality-btn">min</button>
+                <button class = "quality-btn">7</button>
+                <button class = "quality-btn">maj7</button>
+                <button class = "quality-btn">min7</button>
+                <button class = "quality-btn">dim</button>
+                <button class = "quality-btn">aug</button>
+                <button class = "quality-btn">sus4</button>
+            </div>
+             <h2>テンション</h2>
+            <div class="btn-grid">
+                <button class = "tension-btn">9</button>
+                <button class = "tension-btn">11</button>
+                <button class = "tension-btn">13</button>
+                <button class = "tension-btn">b9</button>
+                <button class = "tension-btn">#9</button>
+                <button class = "tension-btn">#11</button>
+                <button class = "tension-btn">b13</button>
+            </div>
+            <button class = "add-btn">コードを追加</button>
+        </div>
+        <div class = "panel">
+            <h2>コード進行を保存</h2>
+            <div id = "progression-display">
+                <h2>現在の進行</h2>
+            </div>
+            <h2>タイトルを入力</h2>
+                <input type = "text" placeholder="タイトル" id="title-input">
+            <h2>メモ・備考</h2>
+                <textarea placeholder="メモ"></textarea>
+
+            <button class = "save-btn" id="save-btn" >進行を保存</button>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

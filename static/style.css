@@ -1,0 +1,239 @@
+/*===body===*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*===書式===*/
+h1{
+    margin: 30px;
+    font-family: "Times New Roman";
+}
+
+/*=====ホーム画面=====*/
+#home{
+    display: flex;
+    height: 100vh;
+}
+
+/*===コンテンツバー===*/
+#contentsbar{
+    background-color: rgb(15, 37, 35);
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/*===サイドバー===*/
+#sidebar{
+    background-color: rgb(228, 228, 228);
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/*進行追加ボタン*/
+#add{
+    margin: 30px;
+    padding: 10px;
+    background-color: rgb(13, 113, 228);
+    
+    border: none;
+    border-radius: 50px;
+
+    color: rgb(255, 255, 255);
+
+    transition: background-color 0.1s;
+}
+/*進行追加ボタン：マウスオーバー*/
+#add:hover{
+    background-color: rgb(9, 73, 146);
+}
+
+/*===記録した進行の表示範囲===*/   
+#main{
+    background-color: rgb(255, 255, 255);
+    flex: 1;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/*===記録したコード進行を表示するテーブル===*/
+#home-main-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-header{
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 59, 59);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.table-data{
+    border-bottom: 1px solid rgba(67, 124, 110, 0.5);
+    padding: 8px 16px;
+}
+.delete-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+/**/
+
+.title {
+    color: rgba(67, 124, 110, 1);
+    font-size: 48px;
+    font-family: "Times New Roman";
+    background-color: rgba(220, 245, 238, 0.3);
+    border: 2px solid rgba(67, 124, 110, 1);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+h2 {
+    color: rgba(67, 124, 110, 1);
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(220, 245, 238, 0.3);
+    border: 2px solid rgba(67, 124, 110, 1);
+    border-radius: 50px;
+}
+
+.chord-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(220, 245, 238, 0.3);
+    border: 2px solid rgba(67, 124, 110, 0.5);
+    font-size: 30px;
+    font-family: "Times New Roman";
+    color: rgba(67, 124, 110, 1);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.chord-btn:hover{
+    background-color:rgb(67, 124, 110, 1);
+    border: 2px solid rgb(65, 129, 112);
+    color: rgba(220, 245, 238, 1);
+}
+
+.quality-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px; 
+    padding: 8px 16px; 
+    background-color: rgba(220, 245, 238, 0.3);
+    border: 2px solid rgba(67, 124, 110, 0.5);
+    font-size: 25px;
+    font-family: "Times New Roman";
+    color: rgba(67, 124, 110, 1);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.quality-btn:hover{
+    background-color:rgb(67, 124, 110, 1);
+    border: 2px solid rgb(65, 129, 112);
+    color: rgba(220, 245, 238, 1);
+}
+
+.tension-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px; 
+    padding: 8px 16px; 
+    background-color: rgba(220, 245, 238, 0.3);
+    border: 2px solid rgba(67, 124, 110, 0.5);
+    font-size: 25px;
+    font-family: "Times New Roman";
+    color: rgba(67, 124, 110, 1);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.tension-btn:hover{
+    background-color:rgb(67, 124, 110, 1);
+    border: 2px solid rgb(65, 129, 112);
+    color: rgba(220, 245, 238, 1);
+}
+
+.add-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px; 
+    padding: 8px 16px; 
+    background-color: rgba(220, 245, 238, 0.3);
+    border: 2px solid rgba(67, 124, 110, 0.5);
+    font-size: 25px;
+    font-family: "Times New Roman";
+    color: rgba(67, 124, 110, 1);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.add-btn:hover{
+    background-color:rgb(67, 124, 110, 1);
+    border: 2px solid rgb(65, 129, 112);
+    color: rgba(220, 245, 238, 1);
+}
+
+.save-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px; 
+    padding: 8px 16px; 
+    background-color: rgba(220, 245, 238, 0.3);
+    border: 2px solid rgba(67, 124, 110, 0.5);
+    font-size: 25px;
+    font-family: "Times New Roman";
+    color: rgba(67, 124, 110, 1);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.save-btn:hover{
+    background-color:rgb(67, 124, 110, 1);
+    border: 2px solid rgb(65, 129, 112);
+    color: rgba(220, 245, 238, 1);
+}
+
+
+.btn-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+}
+
+.selected {
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    background-color: rgb(67, 124, 110);
+    color: rgba(220, 245, 238, 1);
+    border: 2px solid rgb(65, 129, 112);
+}
+
+
